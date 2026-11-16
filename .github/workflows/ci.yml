@@ -1,0 +1,23 @@
+name: Spam Detection CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Print a message
+        run: echo "Spam Detection CI started!"
+
+      - name: Show Python version
+        run: python3 --version
+
+      - name: List project files
+        run: ls -la
