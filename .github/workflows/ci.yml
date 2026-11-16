@@ -3,7 +3,7 @@ name: Spam Detection CI
 on:
   push:
     branches:
-      - main
+      - ci-practice
 
 jobs:
   first-job:
