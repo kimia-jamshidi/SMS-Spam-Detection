@@ -5,6 +5,10 @@ on:
   push:
     branches:
       - ci-practice
+  
+  pull_request:
+    branches:
+      - main
 
 jobs:
   test:
